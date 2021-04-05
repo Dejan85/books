@@ -5,7 +5,7 @@ import { Input, SubContainer, Button } from "../../ui";
 const Search = (): JSX.Element => {
   const [search, setSearch] = useState("");
 
-  const onChange = (e) => {
+  const onChange = (e: { target: { value: React.SetStateAction<string> } }) => {
     setSearch(e.target.value);
   };
 
@@ -13,7 +13,7 @@ const Search = (): JSX.Element => {
     console.log(search);
   };
 
-  const onKeyPress = (e) => {
+  const onKeyPress = (e: { key: string }) => {
     if (e.key === "Enter") {
       searchBook();
     }
