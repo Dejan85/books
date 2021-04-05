@@ -1,12 +1,17 @@
 import React from "react";
 import { Button, Header, MainContainer, SubContainer, Input } from "./ui/index";
 const App = (): JSX.Element => {
+  const onChange = () => {};
   return (
     <div className="app">
       <MainContainer>
-        <Header tag="h1" text="Book Expand" />
+        <Header tag="h1" text="Book Explorer" />
         <SubContainer>
-          <Input />
+          <Input
+            placeholder="Search for book"
+            onChange={onChange}
+            name="search"
+          />
           <Button type="button" text="Search" />
         </SubContainer>
       </MainContainer>

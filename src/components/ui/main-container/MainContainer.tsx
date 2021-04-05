@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { MainContainerProps } from "./types";
 
 const MainContainer = (props: MainContainerProps): JSX.Element => {
@@ -8,4 +8,4 @@ const MainContainer = (props: MainContainerProps): JSX.Element => {
   return <div className={className}>{children}</div>;
 };
 
-export default MainContainer;
+export default memo(MainContainer);
