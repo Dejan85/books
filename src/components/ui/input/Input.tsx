@@ -2,7 +2,8 @@ import React from "react";
 import { InputProps } from "./types";
 
 const Input = (props: InputProps) => {
-  const { placeholder, value, onChange, type, name, id } = props;
+  const { placeholder, value, onChange, type, name, id, onKeyPress } = props;
+
   return (
     <input
       placeholder={placeholder}
@@ -12,6 +13,7 @@ const Input = (props: InputProps) => {
       name={name}
       id={id}
       className="input"
+      onKeyPress={onKeyPress}
     />
   );
 };

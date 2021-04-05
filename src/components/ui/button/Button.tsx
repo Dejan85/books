@@ -9,7 +9,7 @@ const Button = (props: ButtonProps) => {
       disabled={disabled}
       value={value}
       className="button"
-      onClick={() => onClick}
+      onClick={onClick}
     >
       {text}
     </button>
