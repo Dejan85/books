@@ -6,7 +6,7 @@ const App = (): JSX.Element => {
       <MainContainer>
         <Header tag="h1" text="Book Expand" />
         <SubContainer>
-          <Button />
+          <Button type="button" text="Search" />
         </SubContainer>
       </MainContainer>
     </div>
