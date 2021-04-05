@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 const SubContainer = (props) => {
   const { children } = props;
@@ -6,4 +6,4 @@ const SubContainer = (props) => {
   return <div className="sub-container">{children}</div>;
 };
 
-export default SubContainer;
+export default memo(SubContainer);
