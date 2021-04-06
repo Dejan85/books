@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { InputProps } from "./types";
 
 const Input = (props: InputProps) => {
@@ -18,4 +18,4 @@ const Input = (props: InputProps) => {
   );
 };
 
-export default Input;
+export default memo(Input);
