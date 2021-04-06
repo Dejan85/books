@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BUTTON_TEXT, PLACEHOLDER } from "./constants";
+import { BUTTON_TEXT, PLACEHOLDER } from "./messages";
 import { Input, SubContainer, Button } from "../../ui";
 import { useInjectSaga } from "../../../utils/injectSaga";
 import { useInjectReducer } from "../../../utils/injectReducer";

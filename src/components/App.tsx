@@ -1,5 +1,5 @@
 import React from "react";
-import { Search } from "./frontend";
+import { Search } from "./frontend/index";
 import { MainContainer, Header } from "./ui/index";
 const App = (): JSX.Element => {
   return (
